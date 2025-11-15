@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import { images } from '../images';
 
 const LoginPage: React.FC = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -10,7 +11,7 @@ const LoginPage: React.FC = () => {
             <div className="max-w-md w-full">
                 <div className="bg-white rounded-2xl shadow-soft-lg p-8 border border-gray-200/80">
                     <div className="text-center mb-8">
-                        <img src="/logo.png" alt="MAXFIN Logo" className="h-16 mx-auto mb-4" />
+                        <img src={images.logo} alt="MAXFIN Logo" className="h-16 mx-auto mb-4" />
                         <h2 className="text-3xl font-extrabold text-maxfin-dark-green">Welcome Back</h2>
                         <p className="mt-2 text-maxfin-muted-text">Sign in to your account</p>
                     </div>

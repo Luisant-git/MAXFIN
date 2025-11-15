@@ -4,10 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { NAV_ITEMS } from '../constants';
 import type { NavItem } from '../types';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { images } from '../images';
 
 const Logo = () => (
     <Link to="/" className="flex items-center space-x-2">
-        <img src="/logo2.png" alt="MAXFIN Logo" className="h-16 w-100" />
+        <img src={images.logo2} alt="MAXFIN Logo" className="h-16 w-100" />
     </Link>
 );
 

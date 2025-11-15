@@ -3,10 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Instagram, Phone, Mail, MapPin } from 'lucide-react';
 import { NAV_ITEMS, MORE_DROPDOWN_EXTRA_ITEMS } from '../constants';
+import { images } from '../images';
 
 const Logo = () => (
     <Link to="/" className="flex items-center space-x-2">
-        <img src="/logo.png" alt="MAXFIN Logo" className="h-12 w-auto" />
+        <img src={images.logo} alt="MAXFIN Logo" className="h-12 w-auto" />
     </Link>
 );
 

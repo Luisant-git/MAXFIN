@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Target, Eye, Award } from 'lucide-react';
+import { images } from '../images';
 
 const TimelineItem = ({ year, title, children }: { year: string, title: string, children: React.ReactNode }) => (
     <div className="relative pl-8 sm:pl-32 py-6 group timeline-item">
@@ -41,9 +42,9 @@ const AboutPage: React.FC = () => {
                         </p>
                     </div>
                      <div className="relative">
-                        <img src="/about-1.jpg" alt="MAXFIN Team" className="rounded-xl shadow-soft-lg w-50 h-full object-cover"/>
+                        <img src={images.about1} alt="MAXFIN Team" className="rounded-xl shadow-soft-lg w-50 h-full object-cover"/>
                         <div className="about-small-img absolute -bottom-12 -left-8 w-48 h-50 rounded-full overflow-hidden border-8 border-white shadow-xl">
-                            <img src="/about-2.jpg" alt="MAXFIN Services" className="w-full h-full object-cover"/>
+                            <img src={images.about2} alt="MAXFIN Services" className="w-full h-full object-cover"/>
                         </div>
                     </div>
                  </div>
