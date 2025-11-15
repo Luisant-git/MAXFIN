@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAXFIN – Makkal Sevai Maiyam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'maxfin-green': '#00796B',
+              'maxfin-dark-green': '#004D40',
+              'maxfin-orange': '#F9A825',
+              'maxfin-light-gray': '#F8F9FA',
+              'maxfin-text': '#212529',
+              'maxfin-muted-text': '#6C757D',
+            },
+            boxShadow: {
+              'soft': '0 4px 12px rgba(0, 0, 0, 0.08)',
+              'soft-lg': '0 10px 25px rgba(0, 0, 0, 0.1)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+        color: #212529; /* maxfin-text */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .bg-hero {
+        background-color: #F8F9FA; /* maxfin-light-gray */
+        background-image:
+          radial-gradient(at 15% 20%, hsla(174, 100%, 30%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 80% 85%, hsla(42, 93%, 55%, 0.1) 0px, transparent 50%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
